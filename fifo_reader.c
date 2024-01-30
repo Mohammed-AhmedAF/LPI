@@ -22,6 +22,9 @@ int main(int argc, char * argv[])
             printf("Character read: %c\r\n",readChar);
         }
         printf("Finished reading file\r\n");
+        printf("Closing FIFO file\r\n");
+        close(fd);
+        printf("Closed FIFO file\r\n");
     }
 
     return 0;
